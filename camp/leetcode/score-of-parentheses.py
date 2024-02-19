@@ -7,7 +7,6 @@ class Solution:
                 stack.append(count)
                 count = 0
             else:
-                prev_count = stack.pop()
-                count = prev_count + max(count * 2, 1)
+                count = stack.pop() + max(count * 2, 1)
 
         return count
